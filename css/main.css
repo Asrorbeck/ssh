@@ -101,22 +101,25 @@ a {
     height: 100vh;
     background-image: url("../../img/hero-mobile.png");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 500px;
+    background-position: center;
+    background-size: 520px;
+    margin-bottom: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   .hero::before {
-    width: 340px;
-    height: 500px;
-    top: calc(0% + 470px);
+    background-image: url("../../img/mobile-hero-1.png");
+    width: 215px;
+    height: 480px;
+    top: calc(0% + 440px);
     background-size: contain;
     left: 0;
   }
   .hero::after {
-    width: 300px;
+    background-image: url("../../img/mobile-hero.png");
+    width: 245px;
     height: 360px;
     top: 0;
     background-size: contain;
