@@ -92,7 +92,39 @@ a {
 .hero__main-img {
   max-width: 600px;
 }
+.hero__mobile {
+  display: none;
+}
 
+@media screen and (max-width: 750px) {
+  .hero {
+    height: 100vh;
+    background-image: url("../../img/hero-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero::before {
+    width: 340px;
+    height: 500px;
+    top: calc(0% + 470px);
+    background-size: contain;
+    left: 0;
+  }
+  .hero::after {
+    width: 300px;
+    height: 360px;
+    top: 0;
+    background-size: contain;
+  }
+  .hero__main-img {
+    display: none;
+  }
+}
 .invitation {
   margin-top: 50px;
   margin-bottom: 100px;
@@ -135,14 +167,25 @@ a {
   max-width: 530px;
 }
 
-.itinerary-container {
-  text-align: center;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+@media screen and (max-width: 750px) {
+  .invitation::before {
+    width: 150px;
+    height: 320px;
+    top: calc(50% + 50px);
+    right: 0;
+  }
+  .invitation__body {
+    font-size: 16px;
+  }
+  .invitation__header {
+    font-size: 64px;
+  }
 }
-
+@media screen and (max-width: 750px) {
+  .calendar__img {
+    max-width: 350px;
+  }
+}
 .timer {
   margin-top: 100px;
   font-family: cagliostro;
@@ -268,8 +311,63 @@ a {
   width: 100%;
 }
 
+@media screen and (max-width: 750px) {
+  .timer::after {
+    background-image: url("../../img/mobile-timer.png");
+    width: 135px;
+    height: 500px;
+    top: calc(0% + 100px);
+    left: 0;
+  }
+  .timer__btn {
+    font-size: 12px;
+  }
+  .timer__icon {
+    width: 18px;
+    height: 18px;
+  }
+  .timer__countdown {
+    margin-bottom: 20px;
+  }
+  .timer__date {
+    font-size: 20px;
+  }
+  .timer__date-wrapper {
+    margin-bottom: 10px;
+  }
+  .timer__dec {
+    font-size: 22px;
+  }
+  .timer__end-wrapper {
+    max-width: 250px;
+  }
+  .timer__event-begins {
+    font-size: 15px;
+  }
+  .timer__header {
+    font-size: 64px;
+    margin-bottom: 25px;
+  }
+  .timer__main-date {
+    font-size: 32px;
+  }
+  .timer__mention {
+    font-size: 12px;
+  }
+  .timer__number {
+    font-size: 20px;
+  }
+  .timer__subheader {
+    font-size: 20px;
+  }
+  .timer__subtitle {
+    font-size: 10px;
+  }
+  .timer__time {
+    font-size: 18px;
+  }
+}
 .wish {
-  padding-bottom: 200px;
   position: relative;
 }
 .wish::after {
@@ -303,6 +401,9 @@ a {
   font-size: 48px;
   color: #314975;
 }
+.wish__image {
+  max-width: 100px;
+}
 .wish__wrapper {
   display: flex;
   align-items: center;
@@ -310,4 +411,34 @@ a {
   border: 2px solid #ba9845;
   gap: 40px;
   margin-bottom: 150px;
+}
+
+@media screen and (max-width: 750px) {
+  .wish::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 480px;
+    height: 430px;
+    top: calc(0% + 165px);
+    right: 0;
+    background-image: url("../../img/footer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+  }
+  .wish__header {
+    font-size: 48px;
+  }
+  .wish__image {
+    max-width: 50px;
+  }
+  .wish__link {
+    font-size: 20px;
+  }
+  .wish__wrapper {
+    padding: 22px 50px;
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */

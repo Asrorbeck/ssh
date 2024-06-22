@@ -41,3 +41,32 @@
     max-width: 530px;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .invitation {
+    &::before {
+      width: 150px;
+      height: 320px;
+      top: calc(50% + 50px);
+      right: 0;
+    }
+    &__body {
+      font-size: 16px;
+    }
+    &__container {
+    }
+    &__header {
+      font-size: 64px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .calendar {
+    &__container {
+    }
+    &__img {
+      max-width: 350px;
+    }
+  }
+}

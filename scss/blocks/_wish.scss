@@ -1,5 +1,4 @@
 .wish {
-  padding-bottom: 200px;
   position: relative;
   &::after {
     position: absolute;
@@ -32,6 +31,11 @@
     font-size: 48px;
     color: #314975;
   }
+
+  &__image {
+    max-width: 100px;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;
@@ -39,5 +43,39 @@
     border: 2px solid #ba9845;
     gap: 40px;
     margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .wish {
+    &::after {
+      position: absolute;
+      display: inline-block;
+      content: "";
+      width: 480px;
+      height: 430px;
+      top: calc(0% + 165px);
+      right: 0;
+      background-image: url("../../img/footer.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: -1;
+    }
+    &__container {
+    }
+    &__header {
+      font-size: 48px;
+    }
+    &__image {
+      max-width: 50px;
+    }
+    &__link {
+      font-size: 20px;
+    }
+    &__wrapper {
+      padding: 22px 50px;
+      margin-bottom: 30px;
+    }
   }
 }
