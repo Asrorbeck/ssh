@@ -1,32 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asrorbek</title>
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-
-        </div>
-    </header>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Le-invitations</title>
+  </head>
+  <body>
     <main class="main">
-        <section class="hero">
-            <div class="container">
-                <div class="hero__container">
-
-                </div>
+      <section class="hero">
+        <div class="hero__wrapper">
+          <div class="container">
+            <div class="hero__container">
+              <img
+                src="./img/main.png"
+                alt="hero-image"
+                class="hero__main-img"
+              />
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="invitation">
+        <div class="container">
+          <div class="invitation__container">
+            <h3 class="invitation__header">Dear Guests!</h3>
+
+            <p class="invitation__body">
+              It is a great pleasure to invite You to share <br />
+              the joy of the special event for us - our wedding! <br />
+              On thеse wonderful days, <br />
+              we would like to surround ourselves with <br />
+              your warmth and support and make <br />
+              these days unforgettable for all of us.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="calendar">
+        <div class="container">
+          <div class="calendar__container">
+            <img
+              src="./img/calendar.png"
+              alt="calendar png"
+              class="calendar__img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="timer">
+        <div class="container">
+          <div class="timer__container">
+            <h1 class="timer__header">Wedding Itinerary</h1>
+            <div class="timer__first-wrapper">
+              <h2 class="timer__subheader">
+                WEDDING PARTY FOR <span class="timer__dec">GENTS</span>
+              </h2>
+              <div class="date-time">
+                <div class="timer__date-wrapper">
+                  <p class="timer__date">July</p>
+                  <span class="timer__stick"></span>
+                  <span class="timer__main-date">10</span>
+                  <span class="timer__stick"></span>
+                  <p class="timer__date">2024</p>
+                </div>
+                <p class="timer__time">AT 7:00 PM</p>
+              </div>
+              <p class="timer__event-begins">EVENT BEGINS IN:</p>
+              <div class="timer__countdown" id="countdown1">
+                <div class="timer__mention">
+                  <span class="timer__number" id="days1">0</span> days
+                </div>
+                <span class="timer__hr"></span>
+                <div class="timer__mention">
+                  <span class="timer__number" id="hours1">0</span> hours
+                </div>
+                <span class="timer__hr"></span>
+                <div class="timer__mention">
+                  <span class="timer__number" id="minutes1">0</span> minutes
+                </div>
+                <span class="timer__hr"></span>
+                <div class="timer__mention">
+                  <span class="timer__number" id="seconds1">0</span> seconds
+                </div>
+              </div>
+              <div class="timer__location">
+                <button
+                  class="timer__btn"
+                  onclick="window.location.href='https://goo.gl/maps/YOUR_MAP_LINK'"
+                >
+                  <img src="./img/location.svg" alt="location svg" />
+                  ONE & ONLY ONE ZA'ABEEL (DUBAI)
+                </button>
+
+                <div class="timer__end-wrapper">
+                  <p class="timer__subtitle">CLICK TO SEE THE LOCATION</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="timer__space"></div>
+
+            <div class="timer__second-wrapper">
+              <h2 class="timer__subheader">
+                WEDDING PARTY FOR <span class="timer__dec">LADIES</span>
+              </h2>
+              <div class="date-time">
+                <div class="timer__date-wrapper">
+                  <p class="timer__date">July</p>
+                  <span class="timer__stick"></span>
+                  <span class="timer__main-date">11</span>
+                  <span class="timer__stick"></span>
+                  <p class="timer__date">2024</p>
+                </div>
+                <p class="timer__time">AT 7:00 PM</p>
+              </div>
+              <p class="timer__event-begins">EVENT BEGINS IN:</p>
+              <div class="timer__countdown" id="countdown2">
+                <div class="timer__mention">
+                  <span class="timer__number" id="days2">0</span> days
+                </div>
+                <span class="timer__hr"></span>
+                <div class="timer__mention">
+                  <span class="timer__number" id="hours2">0</span> hours
+                </div>
+                <span class="timer__hr"></span>
+                <div class="timer__mention">
+                  <span class="timer__number" id="minutes2">0</span> minutes
+                </div>
+                <span class="timer__hr"></span>
+                <div class="timer__mention">
+                  <span class="timer__number" id="seconds2">0</span> seconds
+                </div>
+              </div>
+              <div class="timer__location">
+                <button
+                  class="timer__btn"
+                  onclick="window.location.href='https://goo.gl/maps/YOUR_MAP_LINK'"
+                >
+                  <img src="./img/location.svg" alt="location svg" />
+                  ONE & ONLY ONE ZA'ABEEL (DUBAI)
+                </button>
+
+                <div class="timer__end-wrapper">
+                  <p class="timer__subtitle">CLICK TO SEE THE LOCATION</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wish">
+        <div class="container">
+          <div class="wish__container">
+            <h4 class="wish__header">
+              We promise You <br />
+              a magical evening filled <br />
+              with amazing impressions <br />
+              and joyful moments!
+            </h4>
+
+            <div class="wish__wrapper">
+              <img src="./img/not-1.png" alt="no photo" class="wish__image" />
+              <img src="./img/not.png" alt="no photo" class="wish__image" />
+              <img src="./img/nophoto.png" alt="no photo" class="wish__image" />
+            </div>
+
+            <a href="#" class="wish__link">@le_invitations</a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            
-        </div>
+      <div class="container"></div>
     </footer>
-</body>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>

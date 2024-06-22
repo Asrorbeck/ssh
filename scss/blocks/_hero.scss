@@ -1,0 +1,37 @@
+.hero {
+  position: relative;
+  &::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 460px;
+    height: 650px;
+    top: calc(0% + 100px);
+    left: 0;
+    background-image: url("../../img/main-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+  &::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 460px;
+    height: 560px;
+    top: 0;
+    right: 0;
+    background-image: url("../../img/main-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__main-img {
+    max-width: 600px;
+  }
+}

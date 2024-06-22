@@ -1,0 +1,150 @@
+.itinerary-container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.timer {
+  margin-top: 100px;
+  font-family: cagliostro;
+  margin-bottom: 100px;
+  position: relative;
+  &::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 405px;
+    height: 1000px;
+    top: 0;
+    left: 0;
+    background-image: url("../../img/timer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+  }
+  &__container {
+    text-align: center;
+  }
+  &__header {
+    font-family: "Passions Conflict";
+    font-weight: 300;
+    font-size: 96px;
+    margin-bottom: 36px;
+    color: #ba9845;
+  }
+
+  &__subheader,
+  &__date,
+  &__main-date {
+    font-family: cagliostro;
+    font-weight: 400;
+    font-size: 32px;
+    color: #314975;
+  }
+
+  &__date {
+    font-size: 40px;
+  }
+
+  &__main-date {
+    font-size: 64px;
+  }
+
+  &__dec {
+    font-size: 36px;
+  }
+
+  &__stick {
+    width: 1px;
+    height: 40px;
+    background-color: #003580;
+  }
+
+  &__date-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 23px;
+  }
+
+  &__time {
+    font-family: cagliostro;
+    font-size: 32px;
+    color: #314975;
+  }
+
+  &__event-begins {
+    font-family: cagliostro;
+    font-size: 24px;
+    color: #ba9845;
+    margin-bottom: 12px;
+  }
+
+  &__mention {
+    font-family: cagliostro;
+    color: #ba9845;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 57px;
+  }
+
+  &__number {
+    font-size: 32px;
+  }
+
+  &__hr {
+    width: 1px;
+    height: 50px;
+    background-color: #ba9845;
+  }
+
+  &__btn {
+    background-color: #314975;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  &__subtitle {
+    font-size: 17px;
+    color: #74777b;
+    text-align: end;
+    margin-top: 10px;
+  }
+
+  &__end-wrapper {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+
+  &__space {
+    margin-bottom: 100px;
+  }
+
+  &__location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,43 @@
+.invitation {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  position: relative;
+  &::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 300px;
+    height: 650px;
+    top: calc(50% - 35px);
+    right: 0;
+    background-image: url("../../img/invita-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+  }
+  &__body {
+    font-family: Cagliostro;
+    font-size: 36px;
+    text-align: center;
+  }
+  &__header {
+    font-family: "Passions Conflict";
+    font-size: 96px;
+    color: #ba9845;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+.calendar {
+  &__container {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img {
+    max-width: 530px;
+  }
+}
