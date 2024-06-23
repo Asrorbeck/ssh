@@ -44,8 +44,8 @@ a {
 
 .arrow span {
   display: block;
-  width: 3.5vw;
-  height: 3.5vw;
+  width: 1.5vw;
+  height: 1.5vw;
   border-bottom: 5px solid #ba9845;
   border-right: 5px solid #ba9845;
   transform: rotate(45deg);
@@ -71,5 +71,12 @@ a {
   100% {
     opacity: 0;
     transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .arrow span {
+    width: 2.5vw;
+    height: 2.5vw;
   }
 }
