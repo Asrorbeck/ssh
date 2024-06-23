@@ -89,10 +89,68 @@ a {
     transform: rotate(45deg) translate(20px, 20px);
   }
 }
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #888;
+  font-family: Montserrat;
+  width: 50%;
+  text-align: center;
+}
+
+.modal-button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: #314975;
+  color: #fff;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #314975;
+  border-radius: 50%;
+  bottom: calc(0% + 35px);
+  left: calc(0% + 35px);
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
 @media screen and (max-width: 750px) {
   .arrow span {
     width: 2.5vw;
     height: 2.5vw;
+  }
+  .modal-content {
+    margin: 75% auto;
   }
 }
 .container {
