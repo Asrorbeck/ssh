@@ -409,9 +409,6 @@ a {
   .timer__dec {
     font-size: 22px;
   }
-  .timer__end-wrapper {
-    max-width: 250px;
-  }
   .timer__event-begins {
     font-size: 15px;
   }
